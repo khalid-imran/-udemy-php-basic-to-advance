@@ -3,9 +3,6 @@
 <!-- Nav -->
 <?php loadPartial('navbar'); ?>
 
-<!-- Showcase -->
-<?php loadPartial('showcase'); ?>
-
 <!-- Top Banner -->
 <?php loadPartial('top-banner'); ?>
 
@@ -27,7 +24,7 @@
                         <li class="mb-2">
                             <strong>Location:</strong> New York
                             <span
-                                class="text-xs bg-blue-500 text-white rounded-full px-2 py-1 ml-2"
+                                    class="text-xs bg-blue-500 text-white rounded-full px-2 py-1 ml-2"
                             >Local</span
                             >
                         </li>
@@ -57,7 +54,7 @@
                         <li class="mb-2">
                             <strong>Location:</strong> San Francisco
                             <span
-                                class="text-xs bg-blue-500 text-white rounded-full px-2 py-1 ml-2"
+                                    class="text-xs bg-blue-500 text-white rounded-full px-2 py-1 ml-2"
                             >Remote</span
                             >
                         </li>
@@ -87,7 +84,7 @@
                         <li class="mb-2">
                             <strong>Location:</strong> Los Angeles
                             <span
-                                class="text-xs bg-blue-500 text-white rounded-full px-2 py-1 ml-2"
+                                    class="text-xs bg-blue-500 text-white rounded-full px-2 py-1 ml-2"
                             >Local</span
                             >
                         </li>
@@ -117,7 +114,7 @@
                         <li class="mb-2">
                             <strong>Location:</strong> Chicago
                             <span
-                                class="text-xs bg-blue-500 text-white rounded-full px-2 py-1 ml-2"
+                                    class="text-xs bg-blue-500 text-white rounded-full px-2 py-1 ml-2"
                             >Remote</span
                             >
                         </li>
@@ -147,7 +144,7 @@
                         <li class="mb-2">
                             <strong>Location:</strong> Miami
                             <span
-                                class="text-xs bg-blue-500 text-white rounded-full px-2 py-1 ml-2"
+                                    class="text-xs bg-blue-500 text-white rounded-full px-2 py-1 ml-2"
                             >Local</span
                             >
                         </li>
@@ -176,7 +173,7 @@
                         <li class="mb-2">
                             <strong>Location:</strong> Seattle
                             <span
-                                class="text-xs bg-blue-500 text-white rounded-full px-2 py-1 ml-2"
+                                    class="text-xs bg-blue-500 text-white rounded-full px-2 py-1 ml-2"
                             >Remote</span
                             >
                         </li>
@@ -193,10 +190,6 @@
                 </div>
             </div>
         </div>
-        <a href="listings.html" class="block text-xl text-center">
-            <i class="fa fa-arrow-alt-circle-right"></i>
-            Show All Jobs
-        </a>
 </section>
 
 <!-- Bottom Banner -->
