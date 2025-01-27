@@ -1,0 +1,16 @@
+{
+  "name": "khalid-imran/workopia",
+  "description": "Workopia",
+  "authors": [
+    {
+      "name": "Khalid Imran",
+      "email": "ekhalid090@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Framework\\": "Framework/",
+      "App\\": "App/"
+    }
+  }
+}

@@ -1,11 +1,12 @@
 <?php
+
 /**
  * Get the base path
  *
  * @param string $path
  * @return string
  */
-function basePath($path = '')
+function basePath(string $path = ''): string
 {
     return __DIR__ . '/' . $path;
 }
@@ -14,12 +15,14 @@ function basePath($path = '')
  * Load a view
  *
  * @param string $name
+ * @param array $data
  * @return void
-*/
-function loadView($name): void
+ */
+function loadView(string $name, array $data = []): void
 {
-    $viewPath = basePath('views/' . $name . '.view.php');
+    $viewPath = basePath('App/views/' . $name . '.view.php');
     if (file_exists($viewPath)) {
+        extract($data);
         require $viewPath;
     } else {
         echo 'View does not exist';
@@ -32,9 +35,9 @@ function loadView($name): void
  * @param string $name
  * @return void
 */
-function loadPartial($name): void
+function loadPartial(string $name): void
 {
-    $viewPath = basePath('views/partials/' . $name . '.view.php');
+    $viewPath = basePath('App/views/partials/' . $name . '.view.php');
     if (file_exists($viewPath)) {
         require $viewPath;
     } else {
@@ -48,7 +51,7 @@ function loadPartial($name): void
  * @param mixed $value
  * @return void
 */
-function inspect($value): void
+function inspect(mixed $value): void
 {
     echo '<pre>';
     var_dump($value);
@@ -61,10 +64,21 @@ function inspect($value): void
  * @param mixed $value
  * @return void
 */
-function inspectAndDie($value): void
+function inspectAndDie(mixed $value): void
 {
     echo '<pre>';
-    die(var_dump($value));
+    var_dump($value);
     echo '</pre>';
+    die();
 }
 
+/**
+ * Format a salary
+ *
+ * @param string $salary
+ * @return string
+ */
+function formatSalary(string $salary): string
+{
+    return '$' . number_format($salary);
+}
