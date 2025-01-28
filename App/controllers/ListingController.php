@@ -102,6 +102,7 @@ class ListingController
             return;
         }
         $this->db->query('DELETE FROM listings WHERE id = :id', $params);
+        $_SESSION['message'] = 'Listing deleted successfully';
         redirect('/listings');
     }
 }

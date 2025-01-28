@@ -80,6 +80,9 @@ function inspectAndDie(mixed $value): void
  */
 function formatSalary(string $salary): string
 {
+    if (!is_numeric($salary)) {
+        return $salary;
+    }
     return '$' . number_format($salary);
 }
 function sanitize($dirty)
