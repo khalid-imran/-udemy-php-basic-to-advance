@@ -1,7 +1,7 @@
 <?php
 
 namespace App\controllers;
-
+use Framework\Database;
 class HomeController
 {
     protected $db;
